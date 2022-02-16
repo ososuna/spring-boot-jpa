@@ -1,14 +1,19 @@
 package com.example.springbootjpa;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@Entity(name="Student")
 @Getter
 @Setter
 @NoArgsConstructor
 public class Student {
   
+  @Id
   private Long id;
   private String firstName;
   private String lastName;
